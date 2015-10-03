@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/nav_strip">
+
+    <ImageButton
+        android:id="@+id/nav_first"
+        style="@style/nav_icon"
+        android:src="@drawable/selector_nav_first" />
+
+    <ImageButton
+        android:id="@+id/nav_prev"
+        style="@style/nav_icon"
+        android:src="@drawable/selector_nav_prev" />
+
+    <ImageButton
+        android:id="@+id/nav_random"
+        style="@style/nav_icon"
+        android:src="@drawable/selector_nav_random" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/nav_next"
+        style="@style/nav_icon"
+        android:src="@drawable/selector_nav_next" />
+
+    <ImageButton
+        android:id="@+id/nav_last"
+        style="@style/nav_icon"
+        android:src="@drawable/selector_nav_last" />
+
+</LinearLayout>

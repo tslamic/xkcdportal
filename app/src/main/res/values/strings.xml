@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XkcdPortal</string>
+
+    <string name="menu_favorites">Favorites</string>
+    <string name="menu_comic_number">Enter Comic Number</string>
+    <string name="menu_tutorial">Tutorial</string>
+    <string name="menu_about">About</string>
+    <string name="menu_share">Share Comic</string>
+    <string name="menu_explain">Explain Comic</string>
+    <string name="menu_explain_external">Open In Browser</string>
+    <string name="menu_add_favorite">Add To Favorites</string>
+    <string name="menu_rem_favorite">Remove From Favorites</string>
+
+    <string name="comic_chooser_error">Number must be between 1 and %1$d.</string>
+    <string name="comic_search_error">Search currently disabled.</string>
+
+    <string name="favorites_added">"%1$s" is now a favorite.</string>
+    <string name="favorites_removed">"%1$s" is no longer a favorite.</string>
+    <string name="favorites">Favorites</string>
+
+    <string name="comic_cannot_load_img">Image cannot be loaded.</string>
+    <string name="comic_bad_response">
+        Xkcd server is having a bad day, please try again later.
+    </string>
+
+    <string name="connection_error">Unable to connect.</string>
+    <string name="connection_error_limited_content">
+        Unable to connect. Only recently viewed comics might be visible, along with favorites.
+    </string>
+    <string name="offline_error">You are offline.</string>
+    <string name="share_error">Sorry, cannot share.</string>
+    <string name="explain_error">Sorry, cannot explain.</string>
+    <string name="explain_network_error">
+        Sorry, you need to be online to see the explanation.
+    </string>
+    <string name="explain_scrape_error">
+        Please use the icon above to open the explanation in an external browser.
+    </string>
+    <string name="external_link_error">Sorry, cannot open the link.</string>
+
+    <string name="no_favorites">
+        You have no favorites yet. To favorite a comic, tap the heart icon while browsing.
+    </string>
+    <string name="no_alt">This comic has no additional content.</string>
+
+    <string name="help_swipe">Swipe to browse comics.</string>
+    <string name="help_zoom">Pinch a comic for more zoom control.</string>
+    <string name="help_content">Long press a comic to see additional content.</string>
+    <string name="help_zoom_double_tap">Double tap a comic to zoom it.</string>
+
+    <string name="explain_comic">"%1$s" Explanation</string>
+    <string name="explain_comic_short">Explain</string>
+
+    <string name="rate_title">Enjoy using "%1$s"?</string>
+    <string name="rate_desc">
+        If you enjoy using "%1$s", would you mind taking a moment to rate it or leave a review?
+    </string>
+
+    <string name="rate_not_now">Not Now</string>
+    <string name="rate_rate">Rate It</string>
+
+    <string name="notification_new_comic_title">New xkcd comic available.</string>
+    <string name="notification_new_comic_content">Tap here to see it.</string>
+
+</resources>

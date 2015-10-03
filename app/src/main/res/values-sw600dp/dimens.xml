@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="nav_strip_height">56dp</dimen>
+    <dimen name="nav_icon_width">64dp</dimen>
+
+</resources>

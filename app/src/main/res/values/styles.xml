@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowAnimationStyle">@style/anim</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="alertDialogTheme">@style/DialogStyle</item>
+        <item name="colorAccent">@color/grey</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/grey</item>
+    </style>
+
+    <style name="anim" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_top_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_top_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+
+    <style name="nav_icon">
+        <item name="android:layout_width">@dimen/nav_icon_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_nav_background</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="nav_strip">
+        <item name="android:id">@id/navigation_strip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/nav_strip_height</item>
+        <item name="android:background">@color/actionbar_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>
