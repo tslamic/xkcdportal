@@ -21,6 +21,9 @@ import android.widget.ImageView;
 import io.github.tslamic.xkcdportal.Analytics;
 import io.github.tslamic.xkcdportal.Util;
 
+/**
+ * Zoomable and draggable ImageView.
+ */
 public class ZoomImageView extends ImageView {
 
     public interface InteractionListener {
@@ -179,12 +182,11 @@ public class ZoomImageView extends ImageView {
         } else {
             animator = ObjectAnimator.ofPropertyValuesHolder(target, s);
         }
-        animator.setDuration(duration);
-
         if (null == mInterpolator) {
             mInterpolator = new DecelerateInterpolator();
         }
         animator.setInterpolator(mInterpolator);
+        animator.setDuration(duration);
 
         animator.start();
     }

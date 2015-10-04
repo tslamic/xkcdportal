@@ -5,6 +5,9 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
 
+/**
+ * ViewPager only as high as its highest child.
+ */
 public class WrapViewPager extends ViewPager {
 
     private int mMaxHeight;
