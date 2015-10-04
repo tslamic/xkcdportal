@@ -11,20 +11,18 @@ xkcdportal is a sleek xkcd comic browser for Android.
 Contributing
 ---
 
-Contributions are very welcome and much appreciated. Please create a new issue if you plan to add a new feature, so we can discuss it first. Otherwise, follow the existing conventions and style, in order to keep the code as readable as possible.
+Contributions are very welcome and much appreciated.
 
-If you're using IntelliJ/Android Studio, this project uses the default Java code style formatting. A simple Code > Reformat Code should do the trick (make sure to tick 'Optimize Imports').
+Please follow the existing conventions and style, in order to keep the code as readable as possible.
+If using IntelliJ/Android Studio, the default Java code styling and `Code > Reformat Code` should to the trick
+(make sure to tick `Optimize Imports`, too).
+
+If you plan to work on a new feature, create an issue, so we can discuss it first.
 
 Alpha Testing
 ---
 
-If interested, you can get the cutting edge versions by joining
-
-```
-xkcdportal-alpha@googlegroups.com
-```
-
-After joining, make sure to opt-in:
+If interested, you can opt-in and get the alpha releases at:
 
 ```
 https://play.google.com/apps/testing/io.github.tslamic.xkcdportal
