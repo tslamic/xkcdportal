@@ -2,33 +2,31 @@ package io.github.tslamic.xkcdportal.event;
 
 public final class ComicEvent {
 
-    private static final int XKCD_EVENT_FAILURE = 0;
-    private static final int XKCD_EVENT_SUCCESS = 1;
+    private final boolean isSuccessful;
 
-    private final int type;
     public final int comicNumber;
     public final boolean isLatestComic;
 
-    private ComicEvent(int type, int latestComicCount, boolean isLatestComic) {
-        this.type = type;
+    private ComicEvent(boolean isSuccessful, int latestComicCount, boolean isLatestComic) {
+        this.isSuccessful = isSuccessful;
         this.comicNumber = latestComicCount;
         this.isLatestComic = isLatestComic;
     }
 
     public static ComicEvent asSuccess(int comicNumber, boolean isLatestComic) {
-        return new ComicEvent(XKCD_EVENT_SUCCESS, comicNumber, isLatestComic);
+        return new ComicEvent(true, comicNumber, isLatestComic);
     }
 
     public static ComicEvent asFailure(int comicNumber, boolean isLatestComic) {
-        return new ComicEvent(XKCD_EVENT_FAILURE, comicNumber, isLatestComic);
+        return new ComicEvent(false, comicNumber, isLatestComic);
     }
 
     public boolean isSuccessful() {
-        return XKCD_EVENT_SUCCESS == type;
+        return isSuccessful;
     }
 
     public boolean isFailed() {
-        return XKCD_EVENT_SUCCESS != type;
+        return !isSuccessful;
     }
 
 }

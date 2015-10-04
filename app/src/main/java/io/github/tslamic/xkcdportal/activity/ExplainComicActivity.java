@@ -158,7 +158,7 @@ public class ExplainComicActivity extends AbstractWebViewActivity {
         private static final int DEFAULT_CONNECT_TIMEOUT_MILLIS = 15 * 1000;
         private static final int DEFAULT_READ_TIMEOUT_MILLIS = 20 * 1000;
 
-        private static String readHtmlContent(String urlString) throws IOException {
+        private static String readHtmlContent(@NonNull String urlString) throws IOException {
             final URL url = new URL(urlString);
             final HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setConnectTimeout(DEFAULT_CONNECT_TIMEOUT_MILLIS);

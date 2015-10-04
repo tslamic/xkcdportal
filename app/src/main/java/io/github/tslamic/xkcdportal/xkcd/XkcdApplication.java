@@ -39,6 +39,10 @@ public class XkcdApplication extends Application {
         sTracker.enableAdvertisingIdCollection(true);
         sTracker.enableAutoActivityTracking(true);
 
+        // Deletes the old (pre 2.0) database, if present.
+        //noinspection deprecation
+        Realm.deleteRealmFile(this);
+
         final RealmConfiguration config = new RealmConfiguration.Builder(this)
                 .name(REALM_DATABASE)
                 .schemaVersion(REALM_SCHEMA_VERSION)
