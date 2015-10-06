@@ -54,7 +54,7 @@ public enum XkcdPreferences {
         }
     }
 
-    private static final int SHOW_RATE_APP_DIALOG_INTERVAL = 5;
+    private static final int SHOW_RATE_APP_DIALOG_INTERVAL = 50;
     private static final int DISABLE_RATE_APP_DIALOG = -1;
 
     public boolean showRateAppDialog() {
